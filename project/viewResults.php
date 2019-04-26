@@ -1,16 +1,3 @@
-<?php 
-  session_start(); 
-
-  if (!isset($_SESSION['username'])) {
-  	$_SESSION['msg'] = "You must log in first";
-  	header('location: login.php');
-  }
-  if (isset($_GET['logout'])) {
-  	session_destroy();
-  	unset($_SESSION['username']);
-  	header("location: login.php");
-  }
-?>
 <!DOCTYPE html>
 <html lang="en"><head>
   <meta charset="utf-8">
@@ -31,9 +18,10 @@
   <script src="js/modernizr-2.7.1.js"></script>
   
 </head>
+<!-- <body background="bgimage.jpg"> -->
+<body >
 
-<body background="../img/header-bg.jpg">
-
+<!-- <img src="pic_trulli.jpg" alt="Italian Trulli"> -->
     
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
@@ -47,36 +35,13 @@
         
     </div>
         
-    <header>
-      <div class="container">
-        
-        
-        <div class="row header-info">
-          <div class="col-sm-10 col-sm-offset-1 text-center">
-            <h1 class="wow fadeIn">Identifying Customer Segments</h1>
-            <br />
-            <p class="lead wow fadeIn" data-wow-delay="0.5s">Unsupervised learning techniques to identify the segments of the population that form the core customer base for a multi mail-order sales company in Germany.</p>
-            <br />
-              
-            <div class="row">
-              <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-                <div class="row">
-                  <div class="col-xs-6 text-right wow fadeInUp" data-wow-delay="1s">
-                    <form action="https://www.w3schools.com/" method="get" target="_blank">
-                    <a href="#be-the-first" id="button1" class="btn btn-secondary btn-lg scroll" type="submit">VIEW DATASETS</a>
-                  </form>
-                  </div>
-                  <div class="col-xs-6 text-left wow fadeInUp" data-wow-delay="1.4s">
-                    <a href="#invite" id="button2" class="btn btn-primary btn-lg scroll">VIEW RESULTS</a>
-                  </div>
-                </div><!--End Button Row-->  
-              </div>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-    </header>
+   <!--  <header>
+      
+    </header> -->
+    <footer>
+    </footer>
+    <!-- <img src="../img/Result.jpg" alt="Result Graph">
+    <p>Hello</p> -->
    <!-- <form action="https://www.w3schools.com/" method="get" target="_blank">
          <button type="submit">Click me</button>
       </form> -->
